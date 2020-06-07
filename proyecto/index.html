@@ -59,7 +59,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-platzi" href="#">Tickets</a>
+              <a
+                class="nav-link text-platzi"
+                href="#"
+                data-toggle="modal"
+                data-target="#ModalDeCompra"
+                >Tickets</a
+              >
             </li>
           </ul>
         </div>
@@ -136,10 +142,15 @@
                   conocer a los estudiantes de platzi, y a los conferencistas de
                   primer nivel que tenemos para ti
                 </p>
-                <a href="#" class="btn btn-outline-success"
+                <a href="#conviertete-orador-id" class="btn btn-outline-success"
                   >Quiero ser orador!</a
                 >
-                <button type="button" class="btn btn-success btn-platzi">
+                <button
+                  type="button"
+                  class="btn btn-success btn-platzi"
+                  data-toggle="modal"
+                  data-target="#ModalDeCompra"
+                >
                   Comprar Tickets
                 </button>
               </div>
@@ -325,6 +336,72 @@
       </div>
     </footer>
     <!-- / footer -->
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ModalDeCompra"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar Tickets</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row align-items-center">
+                <div class="col">
+                  <label class="sr-only" for="inlineFormInputGroup"
+                    >Username en Instagram</label
+                  >
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inlineFormInputGroup"
+                      placeholder="Username"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="alert alert-dark" role="alert">
+                Recibirás un DM con los detalles
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Cancelar
+            </button>
+            <button
+              type="button"
+              class="btn btn-platzi"
+              data-dismiss="modal"
+              style="color: white;"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
