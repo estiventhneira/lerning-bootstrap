@@ -19,9 +19,12 @@
     <title>Platzi Conf</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-nav">
     <!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      id="header"
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+    >
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="assets/platzi-logo.png" alt="Platzi Logo" />
@@ -41,17 +44,19 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">La conferencia</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#header">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los Oradores</a>
+              <a class="nav-link" href="#section-oradores">Los Oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lugar y Fecha</a>
+              <a class="nav-link" href="#lugarYfecha">Lugar y Fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviertete en orador</a>
+              <a class="nav-link" href="#conviertete-orador-id"
+                >Conviertete en orador</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-platzi" href="#">Tickets</a>
@@ -145,7 +150,7 @@
     </main>
     <!-- /main -->
     <!-- Oradores -->
-    <section class="oradores mt-4 mb-4">
+    <section id="section-oradores" class="oradores mt-4 mb-4">
       <div class="container">
         <div class="row">
           <div class="col text-center text-uppercase">
@@ -209,7 +214,7 @@
     </section>
     <!-- /Oradores -->
     <!-- lugar y fecha -->
-    <section class="place-date">
+    <section id="lugarYfecha" class="place-date">
       <div class="container-fluid pl-0 pr-0">
         <div class="row">
           <div class="col-lg col-md-12">
@@ -242,7 +247,7 @@
     </section>
     <!-- /lugar y fecha -->
     <!-- conviertete en orador -->
-    <section class="conviertete-en-orador pt-3 pb-3">
+    <section id="conviertete-orador-id" class="conviertete-en-orador pt-3 pb-3">
       <div class="container">
         <div class="row">
           <div class="col-12">
