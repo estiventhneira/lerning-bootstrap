@@ -1,0 +1,50 @@
+.navbar-brand {
+  display: flex;
+}
+
+.overlay .container,
+.overlay .container .row {
+  height: 100%;
+}
+
+#main .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+
+#main .carousel {
+  position: relative;
+}
+
+#main .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+}
+
+.btn-platzi {
+  background-color: #9ec93e;
+  border: 1px solid #9ec93e;
+}
+
+.text-platzi {
+  color: #9ec93e !important;
+}
+
+#header a img {
+  max-width: 90px;
+  margin-right: 8px;
+}
+
+#footer {
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+}
+
+#footer a {
+  color: white;
+}
