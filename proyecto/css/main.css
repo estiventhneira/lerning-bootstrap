@@ -36,6 +36,15 @@
   color: #9ec93e !important;
 }
 
+.place-date {
+  background-color: #343a40;
+  color: white;
+}
+
+.place-date img {
+  max-width: 100%;
+}
+
 #header a img {
   max-width: 90px;
   margin-right: 8px;
